@@ -1,0 +1,6 @@
+.DS_Store
+*.swp
+.git/
+.git
+bundle/*/doc/tags
+init.vim
