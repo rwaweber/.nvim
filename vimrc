@@ -53,5 +53,6 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['go'] }
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='seagull'
 
 let g:airline_powerline_fonts = 1
