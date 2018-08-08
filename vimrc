@@ -1,4 +1,5 @@
 execute pathogen#infect()
+set encoding=utf-8
 syntax on
 filetype plugin indent on
 " using tabedit with C-n and C-p because recovering from emacs
