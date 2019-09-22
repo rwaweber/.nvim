@@ -31,3 +31,15 @@
 [submodule "bundle/vim-airline-themes"]
 	path = bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "bundle/vim-sexp"]
+	path = bundle/vim-sexp
+	url = https://github.com/guns/vim-sexp.git
+[submodule "bundle/vim-sexp-mappings-for-normal-people"]
+	path = bundle/vim-sexp-mappings-for-normal-people
+	url = https://github.com/tpope/vim-sexp-mappings-for-regular-people
+[submodule "bundle/vim-surrond"]
+	path = bundle/vim-surrond
+	url = https://github.com/tpope/vim-surround
+[submodule "bundle/vim-fireplace"]
+	path = bundle/vim-fireplace
+	url = https://github.com/tpope/vim-fireplace
