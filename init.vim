@@ -11,7 +11,13 @@ Plug 'ludovicchabant/vim-gutentags'
 
 " Requires node to get running!
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions = [ 'coc-json', 'coc-rls', 'coc-go', 'coc-yaml', 'coc-pyright']
+let g:coc_global_extensions = [
+            \'coc-json',
+            \'coc-rust-analyzer',
+            \'coc-go',
+            \'coc-yaml',
+            \'coc-pyright'
+            \]
 
 
 Plug 'fatih/vim-go', { 'tag' : 'v1.24' }
