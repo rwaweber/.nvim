@@ -1,10 +1,9 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'junegunn/seoul256.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-sensible'
 Plug 'guns/vim-sexp'
+
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fireplace'
@@ -12,7 +11,7 @@ Plug 'ludovicchabant/vim-gutentags'
 
 " Requires node to get running!
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-let g:coc_global_extensions = ['coc-json', 'coc-rls', 'coc-go', 'coc-yaml']
+let g:coc_global_extensions = [ 'coc-json', 'coc-rls', 'coc-go', 'coc-yaml', 'coc-pyright']
 
 
 Plug 'fatih/vim-go', { 'tag' : 'v1.24' }
@@ -50,7 +49,7 @@ set expandtab
 " Set arbitrary line marker
 set colorcolumn=80
 
-set statusline+=%{gutentags#statusline()}
+set statusline+=%{coc#status()}
 
 set list
 set listchars=tab:›\ ,eol:¬,space:.,trail:*
@@ -58,13 +57,11 @@ set listchars=tab:›\ ,eol:¬,space:.,trail:*
 " Always open splits to the right
 set splitright
 
+map <F5> :CocDiagnostics<CR>
+
 " have Vim jump to the last position when
 " reopening a file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='seagull'
-let g:airline_powerline_fonts = 1
