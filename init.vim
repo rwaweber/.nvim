@@ -9,6 +9,11 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fireplace'
 Plug 'ludovicchabant/vim-gutentags'
 
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+let g:airline_theme='seagull'
+
 " Requires node to get running!
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = [
