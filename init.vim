@@ -4,14 +4,19 @@ Plug 'junegunn/seoul256.vim'
 Plug 'tpope/vim-sensible'
 Plug 'guns/vim-sexp'
 
+" clojure and lisp tooling
+Plug 'Olical/conjure', {'tag': 'v4.14.1'}
+Plug 'clojure-vim/vim-jack-in'
+Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fireplace'
-Plug 'ludovicchabant/vim-gutentags'
 
+Plug 'tpope/vim-surround'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'fatih/vim-go', { 'tag' : 'v1.24' }
+
+" color themes
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
 let g:airline_theme='seagull'
 
 " Requires node to get running!
@@ -21,16 +26,13 @@ let g:coc_global_extensions = [
             \'coc-rust-analyzer',
             \'coc-go',
             \'coc-yaml',
-            \'coc-pyright'
+            \'coc-pyright',
+            \'coc-conjure'
             \]
 
-
-Plug 'fatih/vim-go', { 'tag' : 'v1.24' }
-
-" On-demand loading
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-
 call plug#end()
+
+let maplocalleader=","
 
 set encoding=utf-8
 syntax on
