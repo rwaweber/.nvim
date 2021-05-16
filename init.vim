@@ -7,6 +7,7 @@ Plug 'guns/vim-sexp'
 " clojure and lisp tooling
 Plug 'Olical/conjure', {'tag': 'v4.14.1'}
 Plug 'clojure-vim/vim-jack-in'
+Plug 'wlangstroth/vim-racket'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 
@@ -17,6 +18,7 @@ Plug 'fatih/vim-go', { 'tag' : 'v1.24' }
 " color themes
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='seagull'
 
 " Requires node to get running!
@@ -77,4 +79,8 @@ map <F5> :CocDiagnostics<CR>
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
+
+  au BufReadPost *.rkt,*.rktl set filetype=racket
+  au filetype racket set lisp
+  au filetype racket set autoindent
 endif
