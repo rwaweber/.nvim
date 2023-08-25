@@ -20,6 +20,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='seagull'
+let g:go_fmt_command = "goimports"
 
 " Requires node to get running!
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -39,7 +40,9 @@ let maplocalleader=","
 set encoding=utf-8
 syntax on
 filetype plugin indent on
+set mouse=a
 
+map <C-I> :Explore<CR>
 map <C-N> :bn<CR>
 map <C-P> :bp<CR>
 " navigate splits when holding ctrl
