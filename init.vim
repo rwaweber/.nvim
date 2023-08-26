@@ -13,7 +13,7 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people'
 
 Plug 'tpope/vim-surround'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'fatih/vim-go', { 'tag' : 'v1.24' }
+Plug 'fatih/vim-go', { 'tag' : 'v1.28' }
 
 " color themes
 Plug 'vim-airline/vim-airline'
