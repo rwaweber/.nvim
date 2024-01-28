@@ -5,7 +5,7 @@ Plug 'tpope/vim-sensible'
 Plug 'guns/vim-sexp'
 
 " clojure and lisp tooling
-Plug 'Olical/conjure', {'tag': 'v4.14.1'}
+Plug 'Olical/conjure'
 Plug 'clojure-vim/vim-jack-in'
 Plug 'wlangstroth/vim-racket'
 Plug 'tpope/vim-dispatch'
